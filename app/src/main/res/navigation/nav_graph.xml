@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="uz.frodo.educationsystem.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_coursesFragment"
+            app:destination="@id/coursesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/coursesFragment"
+        android:name="uz.frodo.educationsystem.CoursesFragment"
+        android:label="fragment_courses"
+        tools:layout="@layout/fragment_courses" >
+        <action
+            android:id="@+id/action_coursesFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_coursesFragment_to_groupsFragment"
+            app:destination="@id/groupsFragment" />
+        <action
+            android:id="@+id/action_coursesFragment_to_mentorFragment"
+            app:destination="@id/mentorFragment" />
+        <action
+            android:id="@+id/action_coursesFragment_to_mentorFragment2"
+            app:destination="@id/mentorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="uz.frodo.educationsystem.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" >
+        <action
+            android:id="@+id/action_aboutFragment_to_fullStudentFragment"
+            app:destination="@id/fullStudentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/groupsFragment"
+        android:name="uz.frodo.educationsystem.GroupsFragment"
+        android:label="fragment_groups"
+        tools:layout="@layout/fragment_groups" >
+        <action
+            android:id="@+id/action_groupsFragment_to_addGroupFragment"
+            app:destination="@id/addGroupFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mentorFragment"
+        android:name="uz.frodo.educationsystem.MentorFragment"
+        android:label="fragment_mentor"
+        tools:layout="@layout/fragment_mentor" >
+        <action
+            android:id="@+id/action_mentorFragment_to_addMentorFragment"
+            app:destination="@id/addMentorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addMentorFragment"
+        android:name="uz.frodo.educationsystem.AddMentorFragment"
+        android:label="fragment_add_mentor"
+        tools:layout="@layout/fragment_add_mentor" />
+    <fragment
+        android:id="@+id/addGroupFragment"
+        android:name="uz.frodo.educationsystem.AddGroupFragment"
+        android:label="fragment_add_group"
+        tools:layout="@layout/fragment_add_group" />
+    <fragment
+        android:id="@+id/insideFragment"
+        android:name="uz.frodo.educationsystem.InsideFragment"
+        android:label="fragment_inside"
+        tools:layout="@layout/fragment_inside" >
+        <action
+            android:id="@+id/action_insideFragment_to_groupInsideFragment"
+            app:destination="@id/groupInsideFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/groupInsideFragment"
+        android:name="uz.frodo.educationsystem.GroupInsideFragment"
+        android:label="fragment_group_inside"
+        tools:layout="@layout/fragment_group_inside" >
+        <action
+            android:id="@+id/action_groupInsideFragment_to_studentAddFragment"
+            app:destination="@id/studentAddFragment" />
+        <action
+            android:id="@+id/action_groupInsideFragment_to_studentEditFragment"
+            app:destination="@id/studentEditFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentAddFragment"
+        android:name="uz.frodo.educationsystem.StudentAddFragment"
+        android:label="fragment_student_add"
+        tools:layout="@layout/fragment_student_add" />
+    <fragment
+        android:id="@+id/studentEditFragment"
+        android:name="uz.frodo.educationsystem.StudentEditFragment"
+        android:label="fragment_student_edit"
+        tools:layout="@layout/fragment_student_edit" />
+    <fragment
+        android:id="@+id/fullStudentFragment"
+        android:name="uz.frodo.educationsystem.FullStudentFragment"
+        android:label="fragment_full_student"
+        tools:layout="@layout/fragment_full_student" >
+    </fragment>
+</navigation>

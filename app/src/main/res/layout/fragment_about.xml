@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_group_add"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/baseline_arrow_back_24"
+        app:title="Yangi guruh qo'shish"
+        app:titleTextColor="@color/white">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_group_add"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/about_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android kursida siz dastlab kotlin dasturlash tili o’rganasiz.
+
+Shundan so’ng, sodda va murakkab ko’rinishidagi UI komponentlari yordamida mobil ilovalarning tashqi dizayn ko’rinishi qannday yaratish o’rgatiladi.
+
+SQlite malumotlar bazasi hamda ROOM va realm kabi mashhur kutubxonalar, API tushunchasi va internet orqali ishlovchi dasturlar strukturasi, Firebase texnologiyasi, shuningdek hozirda judayam ko’p foydalanilayotgan arxitektura komponentalari, dagger kutubxonalari orqali murakkab mobil ilovalar yaratish imkoniyatiga ega bo’lasiz.
+Android kursida siz dastlab kotlin dasturlash tili o’rganasiz.
+
+Shundan so’ng, sodda va murakkab ko’rinishidagi UI komponentlari yordamida mobil ilovalarning tashqi dizayn ko’rinishi qannday yaratish o’rgatiladi.
+
+SQlite malumotlar bazasi hamda ROOM va realm kabi mashhur kutubxonalar, API tushunchasi va internet orqali ishlovchi dasturlar strukturasi, Firebase texnologiyasi, shuningdek hozirda judayam ko’p foydalanilayotgan arxitektura komponentalari, dagger kutubxonalari orqali murakkab mobil ilovalar yaratish imkoniyatiga ega bo’lasiz.
+"
+            android:textSize="20sp" />
+
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/st_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/main"
+        android:text="Talaba qo'shish"
+        app:cornerRadius="8dp"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

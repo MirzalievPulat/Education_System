@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Education System</string>
+    <string name="mentor">Mentor..</string>
+    <string name="group">Group..</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="days">
+        <item>Toq kunlari</item>
+        <item>Juft kunlari</item>
+        <item>Har kuni</item>
+    </string-array>
+
+    <string-array name="hours">
+        <item>13:00 – 15:00</item>
+        <item>15:00 – 17:00</item>
+        <item>17:00 – 19:00</item>
+    </string-array>
+</resources>
